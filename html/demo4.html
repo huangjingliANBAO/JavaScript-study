@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function myFunction(a,b){
+        return a * b;
+    }
+    var res = myFunction(2,3)
+    console.log(res)
+
+    function myFunction(){
+        alert("调用一个函数");
+    }
+    myFunction();
+    /*
+    alert 警告框
+    prompt 提示框
+    confirm 确认框
+    */
+   alert('你这是一个警告框')
+   var user = prompt('请输入你的名字：')
+   alert(user)
+   var result = confirm('你确定要离开这个页面?')
+   if(result == true){
+       alert('感谢你的光临！')
+   }else{
+       alert('感谢你继续使用我们的服务！')
+   }
+
+</script>
+<body>
+    
+</body>
+</html>

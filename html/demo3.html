@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var run = 10;
+    if(run < 20){
+        document.write("在线学习JavaScript很简单");
+    }
+    var course = 1;
+    if(console == 1){
+        document.write("<h1>HTML 教程 </h1>");
+    }else if(course == 2){
+        document.write("<h1>CSS 教程</h1>");
+    }else{
+        document.write("<h1>JavaScript教程</h1>");
+    }
+
+    
+    function myFunction(){
+        var x;
+        var d = new Date.getDay();
+        switch(d){
+            case 0:x = "今天是星期日";
+            break;
+            case 1:x = "今天是星期一";
+            break;
+            case 2:x = "今天是星期二";
+            break;
+            case 3:x = "今天是星期三";
+            break;
+            case 4:x = "今天是星期四";
+            break;
+            case 5:x = "今天是星期五";
+            break;
+            case 6:x = "今天是星期六";
+            break;
+        }
+        return x;
+    }
+    alert(myFunction);
+
+    var cars = ['大众','奔驰','宝马'];
+    for(var i = 0; i < cars.length;i++){
+        document.write(cars[i] + '<br>');
+    }
+    while(true){
+        break;
+    }
+    do{
+    //代码块
+    }while(true);
+
+    /*
+    continue语句用来中断循环中的迭代
+    如果出现了指定的条件
+    然后继续循环中的下一个迭代
+    */
+   var x = "";
+   for( i = 0; i <= 10; i++){
+       if(i == 3){
+           continue;
+       }
+       x = "数值是：" + i + "<br>";
+       document.write(x);
+   }
+
+</script>
+<body>
+    
+</body>
+</html>

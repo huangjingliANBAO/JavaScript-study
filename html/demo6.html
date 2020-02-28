@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var myCars = new Array('Saab', 'Volvo', 'BMW')
+    var myCars = new Array();
+    myCars[0] = 'Saab'
+    myCars[1] = 'Volvo'
+    myCars[2] = 'BMW'
+    myCars[3] = 'Lincoln'
+    //push()方法添加数组元素最简单的方法
+    var a = [];
+    a[0] = 'zero';
+    a[1] = 'one';
+    var a = []
+    a.push('zero')
+    a.push('one')
+    //pop()方法用来抛出数组末尾的值
+    var oneDown = [1, 4, 6].pop();
+    //concat()方法 两个数组合并
+    var hege = ["Cecilie", "Lone"];
+    var stale = ["Emil", "Tobias", "Linus"];
+    var children = hege.concat(stale);
+    document.write(children);
+    //forEach()方法 用于调用每个数组的每个元素，并将元素传递给回调函数
+    var numbers = [51, 55, 96, 42, 44, 52]
+    function myFunction(item, index) {
+        var demo = document.getElementById('demo')
+        //item传递的是数组的值，index传递的是索引
+        demo.innerHTML + 'index[' + index + ']:' + item + '<br>'
+    }
+    numbers.forEach(myFunction)
+</script>
+
+<body>
+
+</body>
+
+</html>
